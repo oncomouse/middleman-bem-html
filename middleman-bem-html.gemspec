@@ -5,10 +5,10 @@ Gem::Specification.new do |s|
   s.name        = "middleman-bem-html"
   s.version     = "1.0.0"
   s.platform    = Gem::Platform::RUBY
-  # s.authors     = ["Your Name"]
-  # s.email       = ["email@example.com"]
-  # s.homepage    = "http://example.com"
-  # s.summary     = %q{A short summary of your extension}
+  s.authors     = ["Andrew Pilsch"]
+  s.email       = ["apilsch@tamu.edu"]
+  s.homepage    = "http://andrew.pilsch.com"
+  s.summary     = %q{Middleman extension to use bem_html and css_dead_class to add BEM class tags to HTML objects that have attributes (bem-block, bem-element, bem-modifiers).}
   # s.description = %q{A longer description of your extension}
 
   s.files         = `git ls-files`.split("\n")
@@ -17,9 +17,11 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   
   # The version of middleman-core your extension depends on
-  s.add_runtime_dependency("middleman-core", [">= 4.0.0"])
-  s.add_runtime_dependency("bem_html", [">= 0.0.1"])
-  s.add_runtime_dependency("css_dead_class", [">= 0.0.1"])
+  s.add_runtime_dependency("middleman-core", ["~> 4"])
+  s.add_runtime_dependency("bem_html", ["~> 1"])
+  s.add_runtime_dependency("css_dead_class", ["~> 1"])
+  
+  s.license = "ISC"
   
   # Additional dependencies
   # s.add_runtime_dependency("gem-name", "gem-version")
