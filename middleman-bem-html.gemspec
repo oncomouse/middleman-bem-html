@@ -3,11 +3,11 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "middleman-bem-html"
-  s.version     = "1.0.0"
+  s.version     = "1.0.1"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Andrew Pilsch"]
   s.email       = ["apilsch@tamu.edu"]
-  s.homepage    = "http://andrew.pilsch.com"
+  s.homepage    = "http://github.com/oncomouse/middleman-bem-html"
   s.summary     = %q{Middleman extension to use bem_html and css_dead_class to add BEM class tags to HTML objects that have attributes (bem-block, bem-element, bem-modifiers).}
   # s.description = %q{A longer description of your extension}
 
