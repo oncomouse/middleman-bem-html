@@ -77,6 +77,6 @@ An array of CSS class names to not remove, even if they are not present in any o
 
 **defaults to `true`**
 
-If you are using any `external_pipeline` calls to configure your CSS files (like gulp or PostCSS), the `after_build` method that this extension uses to remove all the unused CSS from production HTML will run before the CSS has been generated (as `external_pipeline` calls always run *after* extension methods).
+If you are using any `external_pipeline` calls to configure your CSS files (like gulp or PostCSS), the `after_build` method that this extension uses to remove all the unused CSS from production HTML will run before the CSS has been generated (as `external_pipeline` calls always run *after* extension methods), as such you *must* use an `external_pipeline` to remove the unused CSS classes this extension may generate.
 
 If this effects you, please consider using [postcss-deadclass](https://github.com/oncomouse/postcss-deadclass) to remove the unused CSS classes using PostCSS.
